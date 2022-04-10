@@ -10,11 +10,12 @@
       h1 {
         margin-bottom: 15px;
       }
-      #again {
+
+      #restart {
         color: white;
         background-color: blue;
         height: 40px;
-        width: 80px;
+        width: 150px;
         border-radius: 16px;
         border: 0px;
         margin-bottom: 20px;
@@ -23,7 +24,7 @@
         color: white;
         background-color: red;
         height: 40px;
-        width: 80px;
+        width: 100px;
         border-radius: 16px;
         border: 0px;
         margin-bottom: 20px;
@@ -44,6 +45,9 @@
       <h1>SERVER SCORE: {{serverScore}}</h1>
       <h1>PLAYER SCORE: {{score}}</h1>
       <h1>TOTAL NUMBER OF TOSSES: {{numOfTosses}}</h1>
+      <a href="{% url 'index' %}"
+        ><button id="restart">RESTART THE GAME</button></a
+      >
     </div>
   </body>
 </html>
